@@ -61,24 +61,24 @@ public class PriceService {
         List<Advertiser.Accommodation> accommodations = new ArrayList<>();
         try {
             advertisers = readAllDataFromJsonFile();
-            accommodations = advertisers.stream()
-                .flatMap(advertiser -> advertiser.getAccommodation().stream())
-                .filter(accommodation -> accommodation.getId() == accommodationId)
-                .collect(Collectors.toList());
+            accommodations = searchInFiles(advertisers, accommodationId);
 
-            if (!accommodations.isEmpty()) {
-                return accommodations;
+            if (accommodations.isEmpty()) {
+                advertisers = readAllDataFromYamlFile();
+                accommodations = searchInFiles(advertisers, accommodationId);
             }
-
-            advertisers = readAllDataFromYamlFile();
-            accommodations = advertisers.stream()
-                .flatMap(advertiser -> advertiser.getAccommodation().stream())
-                .filter(accommodation -> accommodation.getId() == accommodationId)
-                .collect(Collectors.toList());
         } catch (Exception e) {
             throw new FileParsingException(ErrorMessages.ERROR_UNEXPECTED_ERROR_OCCURRED, e);
         }
         return accommodations;
+    }
+
+
+    public List<Advertiser.Accommodation> searchInFiles(List<Advertiser> advertisers,int accommodationId){
+        return advertisers.stream()
+            .flatMap(advertiser -> advertiser.getAccommodation().stream())
+            .filter(accommodation -> accommodation.getId() == accommodationId)
+            .collect(Collectors.toList());
     }
 
 }
