@@ -1,0 +1,403 @@
+name: advertiser
+id: 100
+accommodation:
+  - id: 13478 
+    prices: 
+    - currency: EUR 
+      price: 1351.85 
+  - id: 82351 
+    prices: 
+    - currency: EUR 
+      price: 582.19 
+  - id: 14669 
+    prices: 
+    - currency: EUR 
+      price: 1047.21 
+  - id: 85355 
+    prices: 
+    - currency: EUR 
+      price: 1342.02 
+  - id: 14387 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 43282 
+    prices: 
+    - currency: EUR 
+      price: 1446.63 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 1423.65 
+  - id: 60602 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 17986 
+    prices: 
+    - currency: EUR 
+      price: 676.67 
+  - id: 30625 
+    prices: 
+    - currency: EUR 
+      price: 573.55 
+  - id: 55409 
+    prices: 
+    - currency: EUR 
+      price: 1316.80 
+  - id: 20048 
+    prices: 
+    - currency: EUR 
+      price: 173.18 
+  - id: 97644 
+    prices: 
+    - currency: EUR 
+      price: 12.57 
+  - id: 72519 
+    prices: 
+    - currency: EUR 
+      price: 865.69 
+  - id: 32177 
+    prices: 
+    - currency: EUR 
+      price: 114.53 
+  - id: 41135 
+    prices: 
+    - currency: EUR 
+      price: 435.48 
+  - id: 64130 
+    prices: 
+    - currency: EUR 
+      price: 856.67 
+  - id: 40994 
+    prices: 
+    - currency: EUR 
+      price: 134.19 
+  - id: 97758 
+    prices: 
+    - currency: EUR 
+      price: 1211.33 
+  - id: 12485 
+    prices: 
+    - currency: EUR 
+      price: 911.290895531162d 
+  - id: 25784 
+    prices: 
+    - currency: EUR 
+      price: 202.05 
+  - id: 89604 
+    prices: 
+    - currency: EUR 
+      price: 580.62 
+  - id: 57703 
+    prices: 
+    - currency: EUR 
+      price: 188.94 
+  - id: 91945 
+    prices: 
+    - currency: EUR 
+      price: 521.43 
+  - id: 61493 
+    prices: 
+    - currency: EUR 
+      price: 711.3192619388016d 
+  - id: 4237 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 91045 
+    prices: 
+    - currency: EUR 
+      price: 901.25 
+  - id: 38266 
+    prices: 
+    - currency: EUR 
+      price: 1214.8138844386956d 
+  - id: 34417 
+    prices: 
+    - currency: EUR 
+      price: 270.4658958295373d 
+  - id: 84493 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 44705 
+    prices: 
+    - currency: EUR 
+      price: 1320.84 
+  - id: 99193 
+    prices: 
+    - currency: EUR 
+      price: 347.41 
+  - id: 97497 
+    prices: 
+    - currency: EUR 
+      price: 936.21 
+  - id: 58076 
+    prices: 
+    - currency: EUR 
+      price: 238.36 
+  - id: 92617 
+    prices: 
+    - currency: EUR 
+      price: 879.65 
+  - id: 93859 
+    prices: 
+    - currency: EUR 
+      price: 718.90 
+  - id: 1193 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 517.60 
+  - id: 52300 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 29127 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 841.38 
+  - id: 10215 
+    prices: 
+    - currency: EUR 
+      price: 153.87442654867212d 
+  - id: 20400 
+    prices: 
+    - currency: EUR 
+      price: 676.61 
+  - id: 97881 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 607.14 
+  - id: 58686 
+    prices: 
+    - currency: EUR 
+      price: 563.11 
+  - id: 55594 
+    prices: 
+    - currency: EUR 
+      price: 1332.48 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 721.19 
+  - id: 60844 
+    prices: 
+    - currency: EUR 
+      price: 650.31 
+  - id: 551 
+    prices: 
+    - currency: EUR 
+      price: 1212.42 
+  - id: 86906 
+    prices: 
+    - currency: EUR 
+      price: 1071.82 
+  - id: 71363 
+    prices: 
+    - currency: EUR 
+      price: 1430.73 
+  - id: 97364 
+    prices: 
+    - currency: EUR 
+      price: 1259.8529864430343d 
+  - id: 2448 
+    prices: 
+    - currency: EUR 
+      price: 1347.998227309105d 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 46.84 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 951.46 
+  - id: 32073 
+    prices: 
+    - currency: EUR 
+      price: 1109.35 
+  - id: 51045 
+    prices: 
+    - currency: EUR 
+      price: 1377.78 
+  - id: 46058 
+    prices: 
+    - currency: EUR 
+      price: 55.07 
+  - id: 53905 
+    prices: 
+    - currency: EUR 
+      price: 1192.90 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 1216.89 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 47.56 
+  - id: 52517 
+    prices: 
+    - currency: EUR 
+      price: 1346.59 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 828.40 
+  - id: 38089 
+    prices: 
+    - currency: EUR 
+      price: 1157.79 
+  - id: 95185 
+    prices: 
+    - currency: EUR 
+      price: 424.19 
+  - id: 75661 
+    prices: 
+    - currency: EUR 
+      price: 1284.84 
+  - id: 26441 
+    prices: 
+    - currency: EUR 
+      price: 835.48 
+  - id: 1321 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 88328 
+    prices: 
+    - currency: EUR 
+      price: 574.51 
+  - id: 38603 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 44555 
+    prices: 
+    - currency: EUR 
+      price: 629.33 
+  - id: 53037 
+    prices: 
+    - currency: EUR 
+      price: 408.39 
+  - id: 95085 
+    prices: 
+    - currency: EUR 
+      price: 703.80 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 1295.02 
+  - id: 76283 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 13130 
+    prices: 
+    - currency: EUR 
+      price: 633.81 
+  - id: 63003 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 15471 
+    prices: 
+    - currency: EUR 
+      price: 829.2778206898791d 
+  - id: 97352 
+    prices: 
+    - currency: EUR 
+      price: 364.83 
+  - id: 99788 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 44586 
+    prices: 
+    - currency: EUR 
+      price: 443.43 
+  - id: 93013 
+    prices: 
+    - currency: EUR 
+      price: 1199.54 
+  - id: 28372 
+    prices: 
+    - currency: EUR 
+      price: 1480.871030984522d 
+  - id: 90617 
+    prices: 
+    - currency: EUR 
+      price: 871.57 
+  - id: 35299 
+    prices: 
+    - currency: EUR 
+      price: 232.73 
+  - id: 84165 
+    prices: 
+    - currency: EUR 
+      price: 1138.4352906861193d 
+  - id: 14575 
+    prices: 
+    - currency: EUR 
+      price: 620.91 
+  - id: 89320 
+    prices: 
+    - currency: EUR 
+      price: 392.01 
+  - id: 73804 
+    prices: 
+    - currency: EUR 
+      price: 1320.58 
+  - id: 55374 
+    prices: 
+    - currency: EUR 
+      price: 145.15 
+  - id: 52813 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 27986 
+    prices: 
+    - currency: EUR 
+      price: 110.25 
+  - id: 45366 
+    prices: 
+    - currency: EUR 
+      price: 1467.9940516869622d 
+  - id: 59231 
+    prices: 
+    - currency: EUR 
+      price: n/a 
+  - id: 55999 
+    prices: 
+    - currency: EUR 
+      price: 992.92 
+  - id: 94347 
+    prices: 
+    - currency: EUR 
+      price: 390.91 
+  - id: 5664 
+    prices: 
+    - currency: EUR 
+      price: 1068.76 
+  - id: 0 
+    prices: 
+    - currency: EUR 
+      price: 1262.18 
+  - id: 58403
+    prices: 
+    - currency: EUR 
+      price: 684.88 
