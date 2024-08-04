@@ -4,12 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Advertiser {
+public class Advertiser implements Serializable {
 
     private String name;
     private int id;
@@ -18,7 +19,7 @@ public class Advertiser {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class Accommodation {
+    public static class Accommodation implements Serializable{
         private int id;
         private List<Price> prices;
     }
@@ -26,7 +27,7 @@ public class Advertiser {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class Price {
+    public static class Price implements Serializable{
         private String currency;
         private String price;
     }

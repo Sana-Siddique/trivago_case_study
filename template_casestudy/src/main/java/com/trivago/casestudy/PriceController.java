@@ -28,7 +28,7 @@ public class PriceController {
       try {
           List<?> prices = priceService.getPricesByAccommodationId(accommodationId);
 
-          if (prices == null && prices.isEmpty()) {
+          if (prices == null || prices.isEmpty()) {
               return new ResponseEntity<>(ERROR_PRICE_NO_FOUND, HttpStatus.NOT_FOUND);
           } else {
               return new ResponseEntity<>(prices, HttpStatus.OK);
