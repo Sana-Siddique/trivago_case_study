@@ -1,6 +1,8 @@
 package com.trivago.casestudy;
 
+import com.trivago.casestudy.component.FileParser;
 import com.trivago.casestudy.exceptionHandler.FileParsingException;
+import com.trivago.casestudy.model.Advertiser;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -42,6 +44,18 @@ class FileParserTest {
     }
 
     /*
+    Test exception handler if we define different file which is not present in the directory
+     */
+
+    @Test
+    public void testParseInvalidJsonFile() throws FileParsingException {
+        FileParser parser = new FileParser();
+        assertThrows(FileParsingException.class, () -> {
+            parser.parseJsonFile("src/test/resources/prices/file3.json");
+        });
+    }
+
+    /*
     * Test to check if data is fetched successfully from yaml file by comparing values of few
     * first records and also ensuring size of file
     */
@@ -72,15 +86,15 @@ class FileParserTest {
 
     /*
     Test exception handler if we define different file which is not present in the directory
-     */
-
+    */
     @Test
-    public void testParseInvalidJsonFile() throws FileParsingException {
+    public void testParseInvalidYamlFile() {
         FileParser parser = new FileParser();
         assertThrows(FileParsingException.class, () -> {
-            parser.parseJsonFile("src/test/resources/prices/file3.json");
+            parser.parseYamlFile("src/test/resources/prices/file3.yaml");
         });
     }
+
 
 
 }

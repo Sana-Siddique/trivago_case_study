@@ -1,4 +1,4 @@
-package com.trivago.casestudy;
+package com.trivago.casestudy.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
