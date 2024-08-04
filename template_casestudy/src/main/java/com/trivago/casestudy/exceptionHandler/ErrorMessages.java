@@ -1,5 +1,10 @@
 package com.trivago.casestudy.exceptionHandler;
 
+/**
+ * This class is used to store all exception message in order to generalize the structure of code
+ *
+ */
+
 public class ErrorMessages {
 
     public static final String IO_ERROR_READING_FILE = "I/O error reading file";

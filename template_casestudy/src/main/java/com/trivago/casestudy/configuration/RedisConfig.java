@@ -10,6 +10,13 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
+
+/**
+ * This class is used to configure redis cache and deals with the serialization and deserialization of
+ * model class
+ *
+ */
+
 @Configuration
 public class RedisConfig {
 

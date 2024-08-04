@@ -3,6 +3,12 @@ package com.trivago.casestudy.configuration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+/**
+ * This class is used to configure paths of different files
+ *
+ */
+
+
 @Component
 public class FileProperties {
 
@@ -16,15 +22,8 @@ public class FileProperties {
         return jsonFilePath;
     }
 
-    public void setJsonFilePath(String jsonFilePath) {
-        this.jsonFilePath = jsonFilePath;
-    }
-
     public String getYamlFilePath() {
         return yamlFilePath;
     }
 
-    public void setYamlFilePath(String yamlFilePath) {
-        this.yamlFilePath = yamlFilePath;
-    }
 }
