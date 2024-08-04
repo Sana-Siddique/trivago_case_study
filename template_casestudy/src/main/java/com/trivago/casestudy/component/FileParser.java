@@ -2,6 +2,7 @@ package com.trivago.casestudy.component;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.trivago.casestudy.exceptionHandler.ErrorMessages;
 import com.trivago.casestudy.model.Advertiser;
 import com.trivago.casestudy.exceptionHandler.FileParsingException;
 import org.springframework.stereotype.Component;
@@ -34,11 +35,11 @@ public class FileParser {
         List<Advertiser> priceList = null;
 
         try {
-            priceList = List.of(objectMapper.readValue(new File(filePath), Advertiser.class));
+            priceList = List.of(objectMapper.readValue(file, Advertiser.class));
         } catch (JsonMappingException e) {
-            throw new FileParsingException("Error mapping JSON to Advertiser objects", e);
+            throw new FileParsingException(ErrorMessages.ERROR_MAPPING_TO_OBJECTS, e);
         } catch (IOException e) {
-            throw new FileParsingException("I/O error reading JSON file", e);
+            throw new FileParsingException(ErrorMessages.IO_ERROR_READING_FILE, e);
         }
         return priceList;
     }
@@ -55,9 +56,9 @@ public class FileParser {
                 }
             }
         } catch (IOException e) {
-            throw new FileParsingException("I/O error reading YAML file", e);
+            throw new FileParsingException(ErrorMessages.IO_ERROR_READING_FILE, e);
         } catch (Exception e) {
-            throw new FileParsingException("Error mapping YAML to Advertiser objects", e);
+            throw new FileParsingException(ErrorMessages.ERROR_MAPPING_TO_OBJECTS, e);
         }
 
         return advertisers;
@@ -76,7 +77,7 @@ public class FileParser {
 
             return new Advertiser(name, id, accommodations);
         } catch (ClassCastException | NullPointerException e) {
-            throw new FileParsingException("Error parsing Advertiser data", e);
+            throw new FileParsingException(ErrorMessages.ERROR_PARSING_ADVERTISER, e);
         }
     }
 
@@ -92,7 +93,7 @@ public class FileParser {
 
             return new Advertiser.Accommodation(accommodationId, prices);
         } catch (ClassCastException | NullPointerException e) {
-            throw new FileParsingException("Error parsing Accommodation data", e);
+            throw new FileParsingException(ErrorMessages.ERROR_PARSING_ACCOMMODATION, e);
         }
     }
 
@@ -102,7 +103,7 @@ public class FileParser {
             String price = String.valueOf(priceData.get("price"));
             return new Advertiser.Price(currency, price);
         } catch (ClassCastException | NullPointerException e) {
-            throw new FileParsingException("Error parsing Advertiser data", e);
+            throw new FileParsingException(ErrorMessages.ERROR_PARSING_ADVERTISER, e);
         }
     }
 }
